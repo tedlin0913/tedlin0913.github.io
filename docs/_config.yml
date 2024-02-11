@@ -22,7 +22,7 @@ title: Ted Lin Tech
 email: ptengineerlin@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Ted Lin Tech's website
-baseurl: "https://www.tedlintech.com/home" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.tedlintech.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
