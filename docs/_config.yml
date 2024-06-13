@@ -33,7 +33,7 @@ plugins:
   - jekyll-feed
 
 sass:
-  sass_dir: _sass
+  # sass_dir: _sass
   style: compact
 
 # Exclude from processing.
