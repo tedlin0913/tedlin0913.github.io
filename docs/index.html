@@ -3,11 +3,11 @@
 layout: home
 title: Home
 ---
-<div id="carouselExample" class="carousel slide">
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         {% assign image_files = site.static_files | where: "image", true %}
         {% for myimage in image_files %}
-        <div class="carousel-item active">
+        <div class="carousel-item {% if myimage.name == 'IMG_0113.jpg' %} active {% endif %}">
             <img src="{{ myimage.path }}" class="d-block w-100" alt="...">
         </div>
         {% endfor %}
