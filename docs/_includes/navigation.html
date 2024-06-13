@@ -1,5 +1,21 @@
-<nav>
-  {% for item in site.data.navigation %}
-  <a href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>{{ item.name }}</a>
-  {% endfor %}
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><img src="/assets/icons/logo.svg" alt="Bootstrap" width="50" height="50">Ted Lin's
+      Personal Page</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        {% for item in site.data.navigation %}
+        <a href=></a>
+        <li class="nav-item">
+          <a class="nav-link {% if page.url==item.link %} active {% endif %}" aria-current="page" href="{{ item.link }}"
+            {% if page.url==item.link %} class='current' {% endif %}>{{ item.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </nav>
