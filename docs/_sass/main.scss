@@ -3,12 +3,12 @@
 }
 
 #mainNavbar {
-  background: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.2) 70%, #ffffff00);
+  background: linear-gradient(to bottom, var(--bs-body-color), #ffffff00);
   /* background when scroll is in the top */
-  transition: background .5s;
+  transition: background 1s;
   /* control how smooth the background changes */
 }
 
 #mainNavbar.scrolled {
-  background: #ffffff;
+  background: var(--bs-body-color);
 }
