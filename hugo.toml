@@ -1,4 +1,0 @@
-baseURL = 'https://www.tedlintech.com/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "PaperMod"
