@@ -1,0 +1,27 @@
+{{ define "main" }}
+<main class="container py-5">
+    <h1 class="mb-4">{{ .Title }}</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {{ range .Pages }}
+        <div class="col">
+            <div class="card h-100">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image }}" class="card-img-top" alt="{{ .Title }}">
+                {{ end }}
+                <div class="card-body">
+                    <h5 class="card-title">{{ .Title }}</h5>
+                    {{ if .Params.description }}
+                    <p class="card-text">{{ .Params.description }}</p>
+                    {{ else }}
+                    <p class="card-text">{{ .Summary }}</p>
+                    {{ end }}
+                </div>
+                <div class="card-footer text-center">
+                    <a href="{{ .RelPermalink }}" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</main>
+{{ end }}
